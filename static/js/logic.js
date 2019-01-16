@@ -44,24 +44,12 @@ function partyColors(feature, cong) {
     }
 };
 
+// Initialize layer groups
 var shapeGroup = L.layerGroup();
 var alaskaGroup = L.layerGroup();
 var hawaiiGroup = L.layerGroup();
 
-// function initialize() {
-//     // 86th congress
-
-//     // 91st congress
-
-//     // 96th congress
-    
-//     // 101st congress
-
-//     // 106th congress
-
-//     // 111th congress
-// }
-
+// Function to plot shapefiles for a single congress
 function createMap(cong) {
     if (cong === "86th (1959-1961)") {
         mymap.removeLayer(shapeGroup);
