@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerrymandering Analysis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="static/css/index-style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron">
+                    <h1 class="display-4 text-center">Gerrymandering Analysis</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 text-center">
+                <p>Gerrymandering is the act of manipulating district boundaries to favor one political party over another. Although this can happen all over the world, it is particularly common in the United States, where districts are redrawn every decade after a Census.</p>
+                <p>Solving gerrymandering is <a target="_blank" href="https://www.washingtonpost.com/opinions/this-solution-to-gerrymandering-is-worse-than-the-problem/2018/04/02/d2320628-3689-11e8-acd5-35eac230e514_story.html">very</a> <a target="_blank" href="https://fivethirtyeight.com/features/hating-gerrymandering-is-easy-fixing-it-is-harder/">very</a> difficult, so this project does not attempt to do that. Rather, this analysis aims to identify trends of current congressional districts and visualize changes in district boundaries throughout the decades.</p> 
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a target="_blank" href="map.html"><h4>View interactive map of congressional districts</h4></a>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Exploratory Charts</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-lg-6">
+                <h4>Data Sources</h4>
+                    <ul>
+                        <li>State areas from <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area">Wikipedia</a></li>
+                        <li>115th Congress data from <a target="_blank" href="https://github.com/fivethirtyeight/redistricting-atlas-data">FiveThirtyEight</a></li>
+                        <li>Historical district data and shapefiles from <a target="_blank" href="http://cdmaps.polisci.ucla.edu/ ">http://cdmaps.polisci.ucla.edu/ </a></li>
+                    </ul>
+            </div>
+            <div class="col-lg-6">
+                <h4>Analysis Methods</h4>
+                <p>To make the map, I used a plugin to Leaflet.js to render shapefiles of each congressional district. The shapefiles also included information about the name and party of the representative, which I added to the map as a clickable popup.</p>
+                <p>To analyze correlations, I used Pandas and Matplotlib to clean data from FiveThirtyEight and graph it.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

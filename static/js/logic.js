@@ -33,7 +33,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // Style functions
 function onEachFeature(feature, layer, cong) {
     var congInfo = Object.values(feature.properties.member[cong])[0];
-    layer.bindPopup(`<b>District:</b> ${congInfo.district}<br><b>Name:</b> ${congInfo.name}<br><b>Party:</b> ${congInfo.party}`);
+    layer.bindPopup(`<b>District:</b> ${congInfo.district}<br><b>Rep.:</b> ${congInfo.name}<br><b>Party:</b> ${congInfo.party}`);
 };
 
 function partyColors(feature, cong) {
