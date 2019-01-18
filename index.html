@@ -29,16 +29,53 @@
         <br>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a target="_blank" href="map.html"><h4>View interactive map of congressional districts</h4></a>
+                <a target="_blank" href="http://127.0.0.1:5500/map.html"><h4>View interactive map of congressional districts</h4></a>
             </div>
         </div>
         <br>
         <div class="row text-center">
             <div class="col-lg-12">
-                <h2>Exploratory Charts</h2>
+                <h2>Exploratory Charts: 115th Congress (2017-2019)</h2>
+                <!-- <h5 class="text-secondary">Hover on each chart for an explanation</h5> -->
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-6">
+                <h3>Number of Districts by Party</h3>
+                <img src='static/images/Num_Districts.png' width=80%>
+                <p class="exp mx-3">
+                    Republicans had a majority of seats in the 115th Congress, which is represented here. They held 55% of the seats; however, <a href="https://en.wikipedia.org/wiki/2016_United_States_House_of_Representatives_elections#Results_summary">they earned only 49% of the popular vote.</a> Though this is not a large difference, this statistic does suggest that Republicans earned more seats than the population would predict, which was likely an effect of gerrymandering.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h3>Average District Compactness by Party</h3>
+                <img src='static/images/Party_Compactness.png' width=80%>
+                <p class="exp mx-3">
+                    Compactness is a measure of the extent to which the edges of a district are close to its center. More spread out districts, with jagged boundaries, are more likely to be gerrymandered. In this dataset from FiveThirtyEight, compactness is ranked across states, with higher ranks indicating more compact districts. This figure shows that states with Democratic districts are only slightly less compact than states with Republican districts.
+                </p>
             </div>
         </div>
         <br>
+        <div class="row text-center">
+            <div class="col-lg-6">
+                <h3>Partisan Voting Index (PVI) by Majority Race of District</h3>
+                <img src='static/images/Race_PVI.png' width=80%>
+                <p class="exp mx-3">
+                    PVI measures how likely a district is to vote for a Democrat (negative) or a Republican (positive). Majority-minority districts are districts where the majority race is non-white. These districts can serve to dilute the voting power of minorities; however, they can also effectively ensure the election of minorities to legislative bodies. From this chart, it is clear that majority-minority districts lean Democrat, whereas majority non-Hispanic white districts lean Republican. However, 95 districts are majority-minority, while the other 333 districts are majority non-Hispanic white. 
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h3>Efficiency Gap vs District Perimeters</h3>
+                <img src='static/images/Efficiency_Perimeter.png' width=80%>
+                <p class="exp mx-3">
+                    The efficiency gap indicates the number of "wasted votes", occurring when either a surplus of votes is cast for a candidate that could have won with fewer votes, or when votes are cast for a candidate that has no chance of winning. A tactic in gerrymandering is to pack voters of the minority party into one district, thereby making that district less efficient. This is plotted against the length of interior district perimeters, which, like compactness, is a measure of how unevenly spread a district is. This plot shows that a district with an efficiency gap in favor of Republicans (more positive) also has higher district perimeters.
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr class="mx-1">
         <div class="row text-center">
             <div class="col-lg-6">
                 <h4>Data Sources</h4>
